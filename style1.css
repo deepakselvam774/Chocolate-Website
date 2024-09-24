@@ -1,0 +1,352 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Anton&family=Bree+Serif&family=Dancing+Script:wght@400..700&family=Pacifico&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Anton&family=Bree+Serif&family=Candal&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Pacifico&family=Permanent+Marker&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;   
+}
+
+ body{
+     background-color: #FFF0D1; 
+     /* background-image: url(../images/Dessert_Chocolate_Cake_Theme_Food_Main_Picture_Background__Chocolate_Master_Map__Food_Background__Food_Master_Map_Background_Image_And_Wallpaper_for_Free_Download-removebg-preview.png); 
+     background-size: cover;
+     background-position: center;
+     height:50vh; */
+}
+
+.middle{
+    
+    background-position: center;
+    height: 50vh;
+}
+#melt{
+    background: url("./images/Melted_Chocolate_Vector_Design_Images__Realistic_Melted_Chocolate_Drops__Chocolate__Realistic__Chocolate_Drops_PNG_Image_For_Free_Download-removebg-preview.png");
+    width:100%;
+    height: 200px;
+    transform:translateY(-30px);
+}
+melt:hover
+{
+    
+}
+.header{
+    display: flex;
+    width:100vw;
+    height: 40%;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    background-color: #56230e
+}
+a{
+    width:80px;
+    height:40px;
+    padding:5px;
+    text-decoration: none;
+    color:orange;
+    background-color: #795757;
+    border-radius:10px;
+    display: grid;
+    place-content:center;
+    margin-bottom:20px;
+}
+
+.menu{
+    display: flex;
+    gap:10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:40%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#deep{
+    color:#FFF0D1;
+    font-family: "Bree Serif", serif;
+    text-indent: 10px;
+    margin-left:30px;
+    font-size: 3.5em;
+    padding: 3px;
+    translate: 30px;
+    padding-bottom: 30px
+}
+#lgimg{
+   position: absolute;
+   display: inline-flex;
+   top: 10px;
+   height: 70px;
+   left:70;
+
+}
+
+
+.page
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 20px;
+}
+
+.box1
+{
+    flex: 2;
+    align-self: center;
+}
+
+.box1 a
+{
+    margin:auto;
+    margin-top: 20px;
+}
+
+
+.objective{
+    font-family: "Candal", sans-serif;
+    font-size: 40px;
+    font-weight: 70px;
+}
+.keypoints {
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+
+a:hover{
+    color:#ac7206;
+    background-color: #d6ad61;
+    width: 10em;
+ 
+    
+}
+
+a:focus
+{
+    color: white;
+    background-color: #cccaca;
+}
+
+
+
+*::selection
+{
+    color: #ac7206;
+    background-color: #d6ad61;
+}
+.image-container {
+    position: relative;
+    width: 500px;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fade 12s infinite; /* Total duration of the animation */
+}
+
+.image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.image:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.image:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.image:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.image:nth-child(5) {
+    animation-delay: 8s;
+}
+
+.image:nth-child(6) {
+    animation-delay: 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+/* menu */
+#Menu
+{
+    font-size: 15px;
+    text-align: center;
+     margin: 30px; 
+    /* border-radius: 5px;  */
+    background-color: #50291a;; 
+    color: #FFF0D1;
+}
+.menuitem
+{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    /* padding: 1.5em; */
+
+}
+.item {
+    background-color: #e5d8be;
+    /* border: 3px solid black;  */
+    border-radius: 10px;
+    width: 400px;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-self: center;
+    text-align: center; 
+}
+.item p
+{ 
+    border:1px solid black;
+    padding: 10px;
+    width: 10em;
+    border-radius: 20px;
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 20%;
+}
+.item p:hover
+{
+    background-color: #d6ad61;
+}
+
+
+.menuitem img
+{
+    align-self: center;
+    width: 300px;
+    height: 300px;
+    transition-duration: 90ms;
+}
+/* .item subname
+{
+    display: flex;
+} */
+.menuitem img:hover
+{
+    /* height: 320px; */
+    width: 320px;
+    box-sizing: border-box;
+}
+/* About Us */
+#about
+{ 
+    color: #FFF0D1;
+    text-align: center;
+    background-color: #50291a;;
+    padding: 8px;
+    margin: 20px auto;
+
+}
+
+#aboutus
+{
+    display: flex;
+}
+.abt p
+{
+    padding: 20px;
+    background-color: #e5d8be;
+    margin-top: 35px;
+
+}
+.abt img
+{
+    height:350px;
+    transform:translateY(-20px);
+}
+#first-img{
+    transform:translateY(-20px);
+}
+
+
+
+/* contact us */
+#contact
+{
+    color: #FFF0D1;
+    text-align: center;
+    background-color: #50291a;    
+    padding: 8px;
+    margin: 20px auto;
+    transform: translateY(-60px);
+}
+#contactus
+{
+    transform: translateY(-60px);
+}
+.con
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #e5d8be;
+    margin-top: 50px;
+}
+.cont img
+{
+    height: 170px;
+}
+.cont p
+{
+    padding:5px;
+}
+#icon
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(0,0,0,0.4);
+    
+}
+#icon img
+{
+    width: 30px;
+    height: 30px;
+}
+.icon1
+{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.icon1 p
+{   
+    padding: 5px;
+}
